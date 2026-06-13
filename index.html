@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A responsive fanned hover image gallery built with vanilla HTML, CSS, and JavaScript. Seven stacked photo cards animate on hover, focus, tap, and keyboard navigation for CodePen and modern websites."
+    />
+    <meta
+      name="keywords"
+      content="CSS image gallery, hover image gallery, fanned card gallery, stacked photo cards, animated image cards, vanilla JavaScript gallery, responsive image gallery, tap gallery, keyboard accessible gallery, CodePen gallery, portfolio gallery, social media image gallery, photo card hover effect, CSS card stack"
+    />
+    <meta name="author" content="Jamie Wilson, Dotterel Design" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#f0f0e8" />
+    <meta property="og:title" content="Fanned Hover Image Gallery" />
+    <meta
+      property="og:description"
+      content="A responsive seven-card photo gallery with fanned image cards, smooth hover/tap animation, keyboard support, and vanilla HTML, CSS, and JavaScript."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Dotterel Design" />
+    <meta property="og:url" content="https://github.com/dottereldesign" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fanned Hover Image Gallery" />
+    <meta
+      name="twitter:description"
+      content="A CodePen-ready fanned image gallery with stacked photo cards, hover effects, tap support, and keyboard accessibility."
+    />
+    <title>Fanned Hover Image Gallery | CSS Card Stack</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareSourceCode",
+        "name": "Fanned Hover Image Gallery",
+        "description": "A responsive fanned image card gallery built with vanilla HTML, CSS, and JavaScript, featuring hover, tap, focus, and keyboard interactions.",
+        "programmingLanguage": ["HTML", "CSS", "JavaScript"],
+        "author": {
+          "@type": "Person",
+          "name": "Jamie Wilson",
+          "url": "https://github.com/dottereldesign"
+        },
+        "codeRepository": "https://github.com/dottereldesign",
+        "keywords": [
+          "CSS image gallery",
+          "hover card gallery",
+          "fanned cards",
+          "responsive gallery",
+          "vanilla JavaScript",
+          "CodePen"
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="intro">
+        <h1>Fanned Hover Image Gallery</h1>
+        <p>
+          A responsive CSS card stack with seven photo cards arranged like a loose deck. Hover,
+          focus, tap, or use the arrow keys to animate the gallery.
+        </p>
+      </header>
+
+      <section
+        class="gallery"
+        data-active="default"
+        aria-label="Interactive fanned image gallery"
+        aria-describedby="gallery-instructions"
+      >
+        <button
+          class="gallery-card"
+          type="button"
+          style="--x: -30em; --y: 7.3em; --r: -21deg; --s: 0.7756; --z: 1"
+          aria-label="Show gallery image one"
+          aria-pressed="false"
+        >
+          <img
+            src="assets/images/gallery-card-03.png"
+            alt="Fanned gallery portrait image one"
+            width="674"
+            height="1182"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </button>
+
+        <button
+          class="gallery-card"
+          type="button"
+          style="--x: -22em; --y: 4em; --r: -14deg; --s: 0.8498; --z: 2"
+          aria-label="Show gallery image two"
+          aria-pressed="false"
+        >
+          <img
+            src="assets/images/gallery-card-04.png"
+            alt="Fanned gallery portrait image two"
+            width="674"
+            height="1182"
+            loading="lazy"
+            decoding="async"
+          />
+        </button>
+
+        <button
+          class="gallery-card"
+          type="button"
+          style="--x: -11em; --y: 1.3em; --r: -7deg; --s: 0.9346; --z: 3"
+          aria-label="Show gallery image three"
+          aria-pressed="false"
+        >
+          <img
+            src="assets/images/gallery-card-01.png"
+            alt="Fanned gallery portrait image three"
+            width="674"
+            height="1182"
+            loading="lazy"
+            decoding="async"
+          />
+        </button>
+
+        <button
+          class="gallery-card"
+          type="button"
+          style="--x: 0em; --y: 0em; --r: 0deg; --s: 1; --z: 10"
+          aria-label="Show gallery image four"
+          aria-pressed="false"
+        >
+          <img
+            src="assets/images/gallery-card-02.png"
+            alt="Fanned gallery portrait image four"
+            width="674"
+            height="1182"
+            loading="lazy"
+            decoding="async"
+          />
+        </button>
+
+        <button
+          class="gallery-card"
+          type="button"
+          style="--x: 11em; --y: 1.3em; --r: 7deg; --s: 0.9346; --z: 3"
+          aria-label="Show gallery image five"
+          aria-pressed="false"
+        >
+          <img
+            src="assets/images/gallery-card-06.png"
+            alt="Fanned gallery portrait image five"
+            width="674"
+            height="1182"
+            loading="lazy"
+            decoding="async"
+          />
+        </button>
+
+        <button
+          class="gallery-card"
+          type="button"
+          style="--x: 22em; --y: 4em; --r: 14deg; --s: 0.8498; --z: 2"
+          aria-label="Show gallery image six"
+          aria-pressed="false"
+        >
+          <img
+            src="assets/images/gallery-card-05.png"
+            alt="Fanned gallery portrait image six"
+            width="674"
+            height="1182"
+            loading="lazy"
+            decoding="async"
+          />
+        </button>
+
+        <button
+          class="gallery-card"
+          type="button"
+          style="--x: 30em; --y: 7.3em; --r: 21deg; --s: 0.7756; --z: 1"
+          aria-label="Show gallery image seven"
+          aria-pressed="false"
+        >
+          <img
+            src="assets/images/gallery-card-07.png"
+            alt="Fanned gallery portrait image seven"
+            width="674"
+            height="1182"
+            loading="lazy"
+            decoding="async"
+          />
+        </button>
+      </section>
+
+      <p class="hint" id="gallery-instructions">
+        Tab through the cards or use left and right arrows.
+      </p>
+    </main>
+
+    <button class="copy-ai-button" type="button" data-copy-ai aria-live="polite">
+      Context for AI
+    </button>
+
+    <footer class="site-footer">
+      <a
+        class="github-link"
+        href="https://github.com/dottereldesign"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Open Jamie Wilson on GitHub"
+      >
+        <svg aria-hidden="true" viewBox="0 0 24 24">
+          <path
+            d="M12 2C6.48 2 2 6.59 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49v-1.72c-2.78.62-3.37-1.37-3.37-1.37-.45-1.19-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.06 1.53 1.06.9 1.56 2.36 1.11 2.93.85.09-.67.35-1.11.64-1.37-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.35 9.35 0 0 1 12 7c.85 0 1.7.12 2.5.34 1.9-1.33 2.74-1.05 2.74-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.34 4.8-4.57 5.05.36.32.68.94.68 1.9v2.79c0 .27.18.59.69.49A10.26 10.26 0 0 0 22 12.25C22 6.59 17.52 2 12 2Z"
+          ></path>
+        </svg>
+        <span>Jamie Wilson</span>
+      </a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
