@@ -25,6 +25,17 @@ Credit:
 Created by Jamie Wilson / Dotterel Design.
 GitHub: https://github.com/dottereldesign`;
 
+requestAnimationFrame(() => {
+  requestAnimationFrame(() => {
+    gallery.classList.remove("is-loading");
+    gallery.classList.add("is-fanning");
+
+    window.setTimeout(() => {
+      gallery.classList.remove("is-fanning");
+    }, 760);
+  });
+});
+
 function setActiveCard(nextCard, shouldFocus = false) {
   cards.forEach((card) => {
     const isActive = card === nextCard;

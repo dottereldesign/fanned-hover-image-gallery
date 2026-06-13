@@ -25,13 +25,13 @@ fanned-hover-image-gallery/
   README.md
   assets/
     images/
-      gallery-card-01.png
-      gallery-card-02.png
-      gallery-card-03.png
-      gallery-card-04.png
-      gallery-card-05.png
-      gallery-card-06.png
-      gallery-card-07.png
+      gallery-card-01.webp
+      gallery-card-02.webp
+      gallery-card-03.webp
+      gallery-card-04.webp
+      gallery-card-05.webp
+      gallery-card-06.webp
+      gallery-card-07.webp
   index.html
   style.css
   script.js
